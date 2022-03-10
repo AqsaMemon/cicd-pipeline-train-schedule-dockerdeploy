@@ -14,7 +14,7 @@ pipeline {
             }
             steps {
                 script {
-                    app = docker.build("aqsamemon/train-schedule")
+                    app = docker.build("AqsaMemon/train-schedule")
                     app.inside {
                         sh 'echo $(curl localhost:8080)'
                     }
